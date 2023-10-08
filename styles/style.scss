@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap);
+$PaleBlue: hsl(243, 100%, 93%);
+$GrayishBlue: hsl(229, 7%, 55%);
+$DarkBlue: hsl(228, 56%, 26%);
+$VeryDarkBlue: hsl(229, 57%, 11%);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+    font-size: 14px;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $VeryDarkBlue;
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    background-size: 100% ;
+    background-position:0 50vh;
+    height: 100vh;
+    >div:first-child{
+        color: $PaleBlue;
+        width: 60%;
+        height: 180px;
+        display: flex;
+        flex-direction:row ;
+        justify-content: space-between;
+        >div:first-child{
+            width:38% ;
+            background-color:$DarkBlue ;
+            border-radius: 10px 70px 10px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                width: 80%;
+                height: 60%;
+                >img{
+                    width: 120px;
+                }
+                >div{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    >div{
+                        background-color: $VeryDarkBlue;
+                        width: 40px ;
+                        height: 40px;
+                        margin-right: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        >div:last-child{
+            width: 59%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            >div:first-child{
+                
+                display: flex;
+                flex-direction: column;
+                >div:last-child{
+                    width: 90%;
+                    height: 10px;
+                    margin-left: 5%;
+                    position: absolute;
+                    margin-top: 60px;
+                    div{
+                        
+                        
+                        float: right;
+                    
+                        width: 0;
+                        height: 0;
+                        border-right:20px solid white;
+
+                        border-bottom: 20px solid transparent
+
+                    }
+                }
+                >div:first-child{
+                   position: absolute;
+                    width: 90%;
+                    
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: end;
+                    margin-left:5% ;
+                    p{
+                        height: 60px;
+                        background-color:white ;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 20px;
+                        font-size: 32px;
+                        font-weight: bold;
+                        color: $VeryDarkBlue;
+                        border-radius: 10px 10px 0 10px;
+                        span{
+                           
+                            margin-left: 10px;
+                            color: $GrayishBlue;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            >div:last-child{
+                background-color: $DarkBlue;
+                border-radius: 10px;
+                height: 140px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                >div{
+                    width: 90%;
+                    >p{
+                        
+                        span{
+                            font-weight: bold;
+                            color: white;
+                        }
+                    }
+                    .bar{
+                        margin: 15px auto 10px;
+                        width: 100%;
+                        height: 20px;
+                        background-color: $VeryDarkBlue;
+                        border-radius: 20px;
+                        display: flex;
+                        align-items: center;
+                        >div{
+                            width: 75%;
+                            height:16px;
+                            margin-left: 2px;
+                            border-radius: 18px;
+                            background:linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+                            display: flex;
+                            align-items: center;
+                            justify-content: end;
+                            >div{
+                                
+                                width: 13px;
+                                height: 13px;
+                                border-radius: 50%;
+                                margin-right: 2px;
+                                background-color: white;
+                            }
+
+                        }
+                    }
+                    .bar+div{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+            }
+            
+        }
+    }
+.attribution { font-size: 11px; text-align: center;color: $PaleBlue;margin-top: 10px; }
+.attribution a { color: white }
+    
+}
+@media screen and (max-width:475px){
+    body{
+        background-image: url(../images/bg-mobile.png);
+        background-size: cover;
+        background-position: 0%;
+        background-attachment: fixed;
+        >div:first-child{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 90%;
+            >div:first-child{
+                
+                width: 100%;
+                margin-bottom: 20px;
+                height: 200px;
+                
+            }
+            >div:last-child{
+                
+                text-align: center;
+                display: inline-block;
+                width: 100%;
+                >div:first-child{
+                    >div:last-child{
+                        display: none;
+                    }
+                    >div:first-child{
+                        justify-content: center;
+                        margin-top:130px ;
+                        >p{
+                            width: 50%;
+                            border-radius:10px ;
+                        }
+                    }
+                }
+                >div:last-child{
+                    p,span{
+                        font-size: 12px;
+                    }
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        .attribution{
+            margin-top: 50px;
+        }
+    }
+    
+}
